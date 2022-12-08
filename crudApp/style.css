@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    mask-origin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #52616B;
+    color: #F0F5F9;
+}
+
+/* Maintiene todo centrado */
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #C9D6DF;
+    margin-bottom: 1rem;
+}
+
+#nuevoFormularioTarea {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#entradaNuevaTarea {
+    flex: 1 1 0%;
+    color: #F0F5F9;
+    background-color: #1E2022;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+#entradaNuevaTarea::placeholder {
+    color: #52616B;
+}
+
+#enviarNuevaTarea {
+    color: #EF9A53;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#enviarNuevaTarea:hover { opacity: 0.6;}
+#enviarNuevaTarea:active {
+    color: #F5F5F5;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.listaDeTareas {
+    padding: 1rem;
+}
+
+.listaDeTareas h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #C9D6DF;
+    margin-bottom: 1rem;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E2022;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.contenido {
+    flex: 1 1 0%;
+}
+
+.texto {
+    color: #C9D6DF;
+    font-size: 1rem;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.texto:not(:read-only) {
+    color: #EF9A53;
+} 
+
+.acciones {
+    margin: 0 -0.5rem; 
+}
+
+.acciones button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+
+.acciones button:hover { opacity: 0.6;}
+.acciones button:active {
+    color: #F5F5F5;
+}
+
+.editar { color: #52616B }
+.borrar { color: #F05454 }
+
