@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    mask-origin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 body {
     display: flex;
