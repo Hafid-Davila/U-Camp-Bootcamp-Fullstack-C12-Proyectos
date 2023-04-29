@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header y Nav */
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+/* Jumbotron */
+#jumbotron {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    text-align: center;
+}
+
+#jumbotron h1 {
+    font-size: 2.5rem;
+}
+
+/* Catálogo */
+#catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Adicionales */
+#adicionales {
+    padding: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.redes-sociales {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociales a {
+    margin-left: 1rem;
+}
+
+/* Responsive Web Design - Media Queries */
+@media screen and (max-width: 768px) {
+
+    /* Ajustes para pantallas pequeñas (tablets y smartphones) */
+    nav ul {
+        flex-direction: column;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+    }
+
+    nav:hover ul {
+        display: flex;
+    }
+}
